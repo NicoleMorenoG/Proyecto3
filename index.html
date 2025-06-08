@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Koi Joyas</title>
+    <link rel="stylesheet" href="Assets/index.css"> 
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+        <div class="icono-logo">🌸</div>
+        <span>Nicole Koi</span>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+    <div class="hero-content">
+        <div class="texto">
+        <h1>TÍTULO PRINCIPAL</h1>
+        <p>Texto negocio</p>
+        <form class="formulario">
+            <input type="email" placeholder="Introduce tu correo">
+            <button type="submit">Suscríbete</button>
+        </form>
+        </div>
+        <div class="imagen">
+        <div class="placeholder">IMAGEN</div>
+        </div>
+    </div>
+    </section>
+
+    <section class="productos" id="productos">
+    <h2>PRODUCTOS</h2>
+    <div class="galeria">
+        <div class="producto">
+        <div class="placeholder">IMAGEN</div>
+        <p>Texto</p>
+        </div>
+        <div class="producto">
+        <div class="placeholder">IMAGEN</div>
+        <p>Texto</p>
+        </div>
+        <div class="producto">
+        <div class="placeholder">IMAGEN</div>
+        <p>Texto</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+    <h2>CONTACTO</h2>
+    <div class="contenido-contacto">
+        <div class="imagen-contacto">
+        <div class="placeholder">IMAGEN</div>
+        </div>
+        <div class="texto-contacto">
+        <p>Texto contacto</p>
+        <button>BOTÓN</button>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <div class="redes">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">WhatsApp</a>
+    </div>
+    <p>&copy; 2025 Nicole Koi Joyas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
