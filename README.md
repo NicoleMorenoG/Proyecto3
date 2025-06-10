@@ -72,8 +72,11 @@ En la versión móvil:
 ## 🧠 Conclusión
 
 Este proyecto me permitió poner en práctica los conocimientos adquiridos en el desarrollo de sitios web estáticos utilizando HTML y CSS. A través de la creación de una landing page, reforcé la estructura semántica de HTML5 y profundicé en la aplicación de estilos mediante CSS, priorizando tanto la estética como la funcionalidad.
+
 Implementar un diseño responsive fue uno de los principales desafíos, ya que implicó reorganizar los elementos visuales y asegurar una experiencia de usuario coherente en distintos tamaños de pantalla. También trabajé con grid, media queries, organización modular de archivos y lógica básica en JavaScript para el menú de navegación adaptable. Aunque no se creó un archivo .js externo, se incluyó un fragmento de JavaScript directamente en el HTML para lograr comportamiento interactivo responsive, como el despliegue del menú móvil mediante manipulación del DOM.
+
 Además, aprendí a utilizar Git y GitHub para el control de versiones, lo cual facilitó la gestión del proyecto y permitió mantener un registro claro y ordenado de los cambios realizados. Esto incluye la creación de commits significativos, el uso de stash, rebase, y comandos como push --force en situaciones específicas, respetando siempre las buenas prácticas.
+
 En resumen, este proyecto integró tanto la planificación visual a través de un prototipo como la implementación técnica del diseño, consolidando habilidades fundamentales para el desarrollo frontend.
 
 ---
