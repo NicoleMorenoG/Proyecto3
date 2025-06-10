@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #ffefee; 
   color: #333;
   line-height: 1.6;
@@ -26,8 +26,7 @@ a:hover {
   text-decoration: underline; 
 }
 
-h1,
-h2 {
+h1, h2 {
   font-weight: bold;
   color: #d8a252; 
   margin-bottom: 1rem;
@@ -45,7 +44,7 @@ p {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #ffefee;
 }
 
@@ -74,8 +73,8 @@ p {
   gap: 1rem;
 }
 
-/* === HERO === */
-.hero-content {
+/* === MAIN === */
+.main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -83,7 +82,7 @@ p {
   gap: 0;
 }
 
-.hero .imagen {
+.main .imagen {
   width: 100%;
   height: 100%;
   order: 2;
@@ -118,18 +117,29 @@ p {
 
 /* === PRODUCTOS === */
 .productos {
-  padding: 3rem 2rem;
+  padding: 6rem 2rem 6rem; 
   background-color: #ede4f3; 
+  text-align: center;
 }
 
 .productos h2 {
   margin-bottom: 2rem;
+  text-align: center;
+  padding-left: 0;
+}
+
+.productos-subtitulo {
+  text-align: center;
+  color: #d8a252;
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 4rem; 
 }
 
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem; 
+  gap: 2rem; /* más espacio entre tarjetas */
   padding: 0 2rem;
 }
 
@@ -137,7 +147,7 @@ p {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem; /* más margen interno */
+  padding: 1.5rem; 
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -188,6 +198,60 @@ p {
   background-color: #b17e3d;
 }
 
+/* === RESEÑAS === */
+.resenas {
+  padding: 2rem 2rem 4rem;
+  background-color: #ffefee;
+  text-align: center;
+}
+
+.resenas h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-left: 0;
+}
+
+.resenas-subtitulo {
+  text-align: center;
+  color: #d8a252;
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 4rem; 
+}
+
+.resenas-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.resena {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  color: #d8a252;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.resena p {
+  color: #d8a252;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.resena span {
+  font-size: 0.85rem;
+  color: #b17e3d;
+  font-style: italic;
+}
+
 /* === CONTACTO === */
 .contacto {
   padding: 0;
@@ -227,7 +291,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: #d8a252; 
+  color: #d8a252;
   padding: 3rem;
 }
 
@@ -250,12 +314,41 @@ p {
 /* === FOOTER === */
 .footer {
   padding: 2rem;
-  background-color: #ffefee;
+  background-color: #ede4f3;
   text-align: center;
 }
 
-.footer-menu,
-.redes {
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links h4 {
+  font-size: 1.1rem;
+  color: #d8a252;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  color: #d8a252;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu, .redes {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -285,12 +378,13 @@ p {
     display: block;
   }
 
-  .hero-content,
-  .contenido-contacto {
+  .main-content,
+  .contenido-contacto,
+  .resenas-contenido {
     grid-template-columns: 1fr;
   }
 
-  .hero .imagen {
+  .main .imagen {
     order: 1;
   }
 
